@@ -1,0 +1,101 @@
+
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  min-width: 250px;
+  max-width: 200px;
+  min-height: 100vh;
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #020719;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #2b4b7f;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  background: #113368;
+  color: #000;
+}  
+}
+
+/* Style page content */
+.main {
+  min-width: 250px;
+  max-width: 200px; /*same as width of sidebar*/
+  padding: 0px 10px;
+}
+.main a{
+  color: #113368;;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}/*.wrapper {
+    display: flex;
+    width: auto;
+    align-items: stretch;
+}
+#sidebar {
+    min-width: 100px;
+    max-width: 200px;
+    min-height: 100vh;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+}
+
+a, a:hover, a:focus {
+    color: #2b4b7f;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+#sidebar {
+   
+    background: #020719;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #47748b;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+#sidebar ul li a:hover {
+   background: #113368;
+   color: #000;
+}  
+
+}
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #6d7fcc;
+}
+.main-content
+{
+    margin-left: 40px;
+    width: 100%;
+    float: right;
+}*/

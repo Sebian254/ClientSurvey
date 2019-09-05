@@ -1,0 +1,90 @@
+body{
+  background-image: url('cs1.jpg');
+  background-repeat: no-repeat;
+  background-size: 1900px, 502px;
+  box-shadow: inset 0 0 0 100vw rgba(0,0,0,0.5);
+  color: white;
+}
+#surForm {
+  background-color: #;
+  margin: 100px auto;
+  padding: 40px;
+  width: 70%;
+  min-width: 300px;
+}
+
+/* Style the input fields */
+input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none; 
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+/* Mark the active step: */
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #4CAF50;
+}
+
+
+/* $validator = \Validator::make($request->all(), [
+            'Name' => 'required',
+            'Organization' => 'required',
+            'Ticketing' => 'required',
+            'Transport' => 'required',
+            'Destinations/HotelBookings' => 'required',
+            'VisaDesk' => 'required',
+            'Turn-aroundTime' => 'required',
+            'OutOfTheBoxSolutions' => 'required',
+            'RateThe24hrDesk' => 'required',
+            'RelationshipWithAccountManager' => 'required',
+            'Suggestions' => 'required',
+        ]);
+        if ($validator->fails())
+        {
+            flashy()->error('Please Insert Value');
+            return back() ;
+        }
+        $survey = new customerSurvey();
+        $survey->Name = $request -> get('Name');
+        $survey->Organization = $request -> get('Organization');
+        $survey->Ticketing = $request -> get('Ticketing');
+        $survey->Transport = $request -> get('Transport');
+        $survey->Destinations = $request -> get('Destinations/HotelBookings');
+        $survey->VisaDesk = $request -> get('VisaDesk');
+        $survey->TurnaroundTime = $request -> get('Turn-aroundTime');
+        $survey->OutOfTheBoxSolutions = $request -> get('OutOfTheBoxSolutions');
+        $survey->RateThe24hrDesk = $request -> get('RateThe24hrDesk');
+        $survey->RelationshipWithAccountManager = $request -> get('RelationshipWithAccountManager');
+        $survey->Suggestions = $request -> get('Suggestions');
+        $survey->save();
+        flashy()->success('Thank you! We value your opinion.');
+        return back();  */
